@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Letter Count Checker</title>
+</head>
+<body>
+
+  <script>
+    var word1 = prompt("Enter the first word:");
+    var word2 = prompt("Enter the second word:");
+
+    document.write(word1);
+    document.write("<br>");
+    document.write(word2); 
+    document.write("<br>");
+
+    var commonLetters = 0;
+
+for (var i = 0; i < word1.length; i++) {
+  for (var j = 0; j < word2.length; j++) {
+    if (word1[i] === word2[j]) {
+      commonLetters++;
+      break;
+    }
+  }
+}
+
+document.write("Number of common letters: " + commonLetters);
+  </script>
+
+
+</body>
+</html>

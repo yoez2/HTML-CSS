@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    button {
+        background-color: aquamarine;
+        height: 2rem;
+        width: auto;
+        border: 2px solid red;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <button onclick="factorial()">Factorial</button>
+        <button onclick="calculator()">Calculator</button>
+    </div>
+    <script>
+        function factorial() {
+
+            let userInput = prompt("Enter a number to calculate its factorial:");
+
+            // Convert the user input to a number
+            let number = parseInt(userInput);
+
+            // Check if the input is a valid number
+            if (number >= 0) {
+                let result = 1;
+
+                // Calculate the factorial
+                for (let i = 1; i <= number; i++) {
+                    result *= i;
+                }
+
+                // Display the result using alert
+                alert('The factorial of ' + number + ' is ' + result);
+
+            } else {
+                // Display an error message for invalid input
+                alert("Invalid input. Please enter a non-negative integer.");
+            }
+        }
+
+        function calculator() {
+            do {
+                let input = parseInt(prompt('Press 1 for addition\nPress 2 for subtraction\npress 3 for multiplication\npress 4 for division'));
+
+                if (input > 4) {
+                    prompt('Invalid choice!');
+                    break;
+                }
+                num1 = parseInt(prompt("Enter the first operand: "));
+                num2 = parseInt(prompt("Enter the second operand: "));
+
+                let result = 0;
+
+                if (input == 1) {
+                    result = num1 + num2;
+                    prompt("Addition Result: " + result + '\nPress enter to continue');
+                } else if (input == 2) {
+                    result = num1 - num2;
+                    prompt("Subtraction Result: " + result + '\nPress enter to continue');
+                } else if (input == 3) {
+                    result = num1 * num2;
+                    prompt("Muliplication Result: " + result + '\nPress enter to continue');
+                } else if (input == 4) {
+                    if (num2 != 0) {
+                        result = num1 / num2;
+                        prompt("Division Result: " + result + '\nPress enter to continue');
+                    } else {
+                        prompt("Error: Division by zero\n");
+                        continue;
+                    }
+                } else {
+                    prompt('Error!');
+                }
+                response = prompt("Do you want to calculate again?(yes/no): ");
+
+            } while (response == 'yes');
+
+        }
+
+    </script>
+</body>
+
+</html>

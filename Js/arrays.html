@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<h1>
+  javascript Array methods
+</h1>
+<body>
+  <p id="demo"></p>
+  <p id="join"></p> 
+  <p id="sort"></p>
+  <p id="reverse"></p>
+  <script> 
+    const fruits = ["banana", "orange", "apple", "mango"];
+    
+    document.getElementById("demo").innerHTML = fruits.toString();
+    document.getElementById("join").innerHTML = fruits.join("*");
+
+    const arr1 =["hello","hi"];
+    const arr2=[1,2,3];
+    const arr3=arr1.concat(arr2);
+    document.write("<br>"+arr3);
+
+    const sli=fruits.slice(1,2);
+    document.write("<br>"+sli);
+
+document.getElementById("sort").innerHTML=fruits.sort();
+document.getElementById("reverse").innerHTML=fruits.reverse();
+document.write("<br>")+fruits.sort();
+document.write("<br>")+fruits.reverse();
+
+
+
+  </script>  
+</body>
+</html>

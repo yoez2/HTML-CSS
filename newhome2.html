@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      body {
+        background-image: url(hay5.jpg);
+        background-size: cover;
+        
+
+        height: 100vh;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      /* Style for the navigation menu */
+      .topnav {
+        background-color: #5215ec;
+        background-image: url(hay5.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        border: solid 1px white;
+        border-radius: 0;
+        height: 55px;
+        
+
+        
+      }
+
+      /* Style for the navigation menu links */
+      .topnav a {
+        color: white;
+        text-align: center;
+        padding: 14px 40px;
+        text-decoration: none;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      
+
+        
+      
+      }
+
+      /* On hover, change the background color of the navigation links */
+      .topnav a:hover {
+        background-color: #6f40e4;
+        color: rgb(255, 255, 255);
+      }
+
+      /* Style for dropdown container */
+      .dropdown {
+        position:relative;
+        display:flex;
+      }
+
+      /* Style for dropdown content */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #5215ec;
+        min-width: 100px;
+        z-index: 1;
+        border-radius: 0 0 5px 10px;
+       
+      }
+
+     
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: flex;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      /* Show the dropdown content on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .home{
+       background-image: url(hay4.jpg);
+       background-size: cover;
+       height: 50px;
+        text-align: justify;
+      }
+      .logo{
+        position:absolute;
+        display: flex;
+        margin-top:4px;
+        margin-left: 4px;
+
+      }
+      .icons{
+        cursor:pointer;
+      }
+      /* Styles for servicecontainer */
+.servicecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.colum {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(224, 38, 38)
+    transition: transform 0.4s ease-in;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.colum:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 5px #807c7c;
+}
+.colum h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: cambay;
+}
+.colum h2:hover {
+    color: rgb(145, 35, 35);
+}
+.colum p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    text-align: justify;
+}
+.ico {
+    text-align: center;
+    padding: 10px;
+    font-size: larger;
+}
+/* Media query for smaller screens (adjust the max-width as needed) */
+@media (max-width: 768px) {
+    .servicecontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .colum {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .ico {
+        text-align: center;
+    }
+}/* Servicecontainer-end */
+      
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="logo"><img src="12345.jpg" height="50px" width="150px"></div>
+<div class="topnav">
+  
+    <div class="dropdown">
+        <a href="newhome2.html">HOME</a>
+       
+    </div>
+    <div class="dropdown">
+        <a href="#about">ABOUT</a>
+        
+    </div>
+    <div class="dropdown">
+        <a href="#services">COURSE</a>
+        <div class="dropdown-content">
+            <a href="#service">services</a>
+            <a href="regi.html" target="_blank">register</a>
+           
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="contact.html">CONTACT</a>
+        
+    </div>
+</div>
+<br><br>
+
+<div id="home">
+    <strong><h2>Home Section</h2></strong>
+    <p>The company was founded in 2005 with the aim to meet the ever changing demand of the customers in the field of ICT.<br>Athang strives for the excellence in offering our services, be it a training programme or developing your website or producing an animation work that our audience would love to watch or restoring your internet breakdown and many more… </p>
+    <img src  ="picture3.jpg" height="400px" width="650px" class="pic-diploma" >
+ 
+</div>
+</div>
+<!-- Nav-end -->
+<!----------------SERVICES-SECTION------------->
+<section id=servics>
+    <h2>Our Services</h2>
+    <p>Athang plays a vital lead role in the ever changing ICT scenario in Bhutan. With our team of professional expertise 
+        abreast and adept with the ICT trend, Athang offers its software development expertise in designing, developing and 
+        re-engineering the ICT requirements of our clients. Over a decade, our software engineers have executed several 
+        interesting projects starting from a simple website to many complex systems. And the recent achievement would be 
+        the development and successful rollout of an Enterprise Resource Planning system.
+    </p>
+    <!----------------SERVICE-DETAILS-FLEX-------------->
+    <div class="servicecontainer"> 
+        <div class="colum">
+            <h2>Photography</h2>
+            <div class="ico">
+                <i class="fa fa-graduation-cap" style="font-size: 50px;"></i>
+            </div>
+            <p>We are beyond impressed by the talent and progress shown by our trainees in their inhouse debut exhibition. The photographs on display are a true reflection of their passion, creativity, and the skills they've honed in just one month. 
+              Huge congratulations to these budding photographers for their achievements! 🙌. Your commitment and growth in such a short time are truly commendable.
+              Thank you to everyone who have inspired and supported the growth of our trainees..</p>
+        </div>
+        <div class="colum">
+            <h2>Diploma</h2>
+            <div class="ico">
+                <i class="fa fa-user-tie" style="font-size: 50px;"></i>
+            </div>
+            <p>We're thrilled to welcome our second batch of students to the Diploma in IT program! This program provides an opportunity for those who are passionate about technology to explore and expand their skills, regardless of their academic stream. Our goal is to ensure our students have the knowledge and tools to stay ahead in the ever-evolving world of technology. Good luck to all!
+            </p>
+        </div>
+        <div class="colum">
+            <h2>website design</h2>
+            <div class="ico">
+             <i class="fa fa-globe" style="font-size: 50px;"></i>
+            </div>
+            <p>Critical Skills Training on three programs, Graphics and Design, Photography and Design, and Web Design using Wordpress and SquareSpace started at the Athang Training Academy on 2nd October 2023. Under each program 25 youths will undergo skills training for 4 months. The training is supported by the Skills Promotion and Liaison Division, Department of Workforce Planning and Skills Development, Ministry of Education and Skills Development. The training is funded by the STEP-UP project of ADB..</p>
+        </div>
+    </div><!--Service-details-end-->
+</section>
+
+<div id="about">
+    <h3>About Section</h3>
+   
+</div>
+
+<div id="services">
+    <h3>Services Section</h3>
+    
+</div>
+
+<footer>
+  <div class="cont-y">
+      <div class="row">
+          <div class="col-md-4">
+              <h4>Athang learning Institute</h4>
+              <ul>
+                  <li><a href="about">About us</a></li>
+                  <li><a href="services">services</a></li>
+                  <li><a href="contact">Contact us</a></li>
+              </ul>
+          </div> 
+          <div class="col-md-4">
+              <h4>Comapny Address</h4>
+              <ul>
+                  <li><i class="fa fa-home"></i> Babena,Thimphu,Bhutan</li>
+                  <li><i class="fa fa-phone"></i> +975-17115890</li>
+                  <li><i class="fa fa-envelope"></i> info@athang.com</li>
+              </ul>
+          </div>
+          <div class="col-md-4">
+              <h4>Special links</h4>
+              <ol> 
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>    
+              </ol>
+          </div>
+      </div>
+  </div>
+  <div class="bottom-bar">
+      <div class="cont">
+          <div class="row">
+              <div class="col-md-12"> 
+                  <hr>
+                  <p align="center">
+                      &copy; 2023 Athang Training Academy. All rights reserved.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>        
+</footer>
+</body>
+</html>

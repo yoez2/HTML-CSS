@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Document</title>
+</head>
+<STYLE>
+  @font-face{
+    font-family:"FX_LED";
+    src:url("fonts/FX-LED.TTF");
+
+  }
+  @FONT-FACE{
+    font-family:"hack";
+    src: url("fonts/hack-bold.tff");
+
+  }
+  .digital-clock{
+    background-color: black;
+    color:white;
+    display:flex;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0 2rem;
+    border:0.5rem solid;
+
+
+  }
+  .week{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    width:3rem;
+    color:#2d2d2d;
+    font-weight:bold;
+    font-family: "hack";  
+    }
+    .week-active{
+      color: white;
+    }
+    .time{
+      font-family: "FX_LED";
+
+    }
+    .hour
+    .min
+    .dot{
+      display: inline-block;
+      font-size:13rem;
+
+    }
+    .min{
+      display: math;
+    }
+    .invsible{
+      visibility: hidden;
+    }
+</STYLE>
+<body>
+  <div class="digital-clock">
+    <div class="week">
+      <div class="active">SUN</div>
+      <DIV>MON</DIV>
+      <DIV>TUE</DIV>
+      <DIV>WED</DIV>
+      <DIV>THU</DIV>
+      <DIV>FRI</DIV>
+      <DIV>SAT</DIV>
+      <DIV>SUN</DIV>
+    </div>
+    <DIV class="TIME">
+      <DIV CLASS="HOUR">12</DIV>
+      <DIV CLASS="DOT">:</DIV>
+      <DIV CLASS="MIN">05</DIV>
+    </DIV>
+  </div>
+
+  <script>
+   const $ = (selector) => {
+
+      return document.querySelector(selector);
+    }
+
+    const dot = $(".dot");
+    let showDOT = true;
+
+    function update() {
+      showDOT = !showDOT;
+      const now = new Date();
+
+      if (showDOT) {
+        dot.classList.add("invisible");
+      } else {
+        dot.classList.remove("invisible");
+      }
+    }
+    if()
+
+    // Call the update function every second (1000 milliseconds)
+    setInterval(update, 1000);
+  </script>
+  </script>
+</body>
+</html>
